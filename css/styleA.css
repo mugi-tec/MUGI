@@ -1,0 +1,1151 @@
+@charset "utf-8";
+
+/* Indent */
+/* ------------------------------------------------------------ */
+.indent {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+/* Link */
+/* ------------------------------------------------------------ */
+a:link,
+a:visited {
+	color: #231815;
+	text-decoration: none;
+}
+a:hover,
+a:active {
+	color: #231815;
+	text-decoration: underline;
+}
+.alpha {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.alpha:hover {
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+/* Clear */
+/* ------------------------------------------------------------ */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/* pc_mode / sp_mode */
+/* ------------------------------------------------------------ */
+.pc_mode {
+	display: inline;
+}
+.sp_mode {
+	display: none;
+}
+
+/* Header */
+/* ------------------------------------------------------------ */
+header {
+	line-height: 1.2em;
+}
+header h1.logo {
+	text-align:center;
+	color: #40220f;
+	font-weight: normal;
+	margin: 30px auto;
+	padding: 0;
+}
+header h1.logo p{
+	font-size: 14px;
+	margin-top: 10px;
+}
+header h1.logo a{
+	text-decoration: none;
+}
+header #top-head {
+	text-align:center;
+}
+header #top-head .inner {
+    width: 100%;
+    margin: 0 auto;
+}
+header #top-head .inner {
+    overflow: hidden;
+}
+header #global-nav {
+	margin:0 auto;
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	background: #d4b382;
+}
+header #global-nav ul li {
+    list-style: none;
+	font-weight: 600;
+}
+header #global-nav ul li span {
+    list-style: none;
+	font-size: 12px;
+}
+header #global-nav ul li {
+	position: relative; 
+}
+header #global-nav ul li a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+header #global-nav ul li:after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	bottom: 0px;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+header #global-nav ul li:hover:after {
+	background: #231815;
+	bottom: -3px;
+}
+header #global-nav .bnr {
+	display: none;
+}
+
+/* 各ページ共通 */
+/* ------------------------------------------------------------ */
+main {
+	line-height: 1.7;
+}
+.flex_a {
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+.flex_b {
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.flex_e {
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-evenly;
+}
+.flex_s {
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.viewmore00 {
+    width: 320px;
+	height: 60px;
+	margin: 60px auto 0;
+}
+.viewmore00 a {
+	display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+    width: 318px;
+    height: 58px;
+	border: 1px #fff solid;
+	color: #fff;
+	text-decoration: none;
+	background: url(../images/index/icon_arrow1.svg) no-repeat right 10px center;
+	background-size: auto 16px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.viewmore00 a:hover {
+	background-color: #e5cfa6;
+	color: #fff;
+}
+.viewmore01 {
+    width: 320px;
+	height: 60px;
+	margin: 60px auto 0;
+}
+.viewmore01 a {
+	display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+    width: 318px;
+    height: 58px;
+	border: 1px #40220f solid;
+	color: #40220f;
+	text-decoration: none;
+	background: url(../images/index/icon_arrow2.svg) no-repeat right 10px center;
+	background-size: auto 16px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.viewmore01 a:hover {
+	background-color: #e5cfa6;
+	color: #40220f;
+}
+
+main .title h2 {
+	font-size: 18px;
+	color: #fff;
+	line-height: 1;
+	text-shadow: 0px 0 8px #ff8c00;
+}
+main .title h2 span {
+	font-size: 36px;
+	font-weight: 600;
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	display: block;
+	border-bottom: 1px #fff solid;
+}
+main .subtitle {
+	text-align: center;
+	line-height: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+main .subtitle h3 {
+	font-size: 18px;
+	color: #40220f;
+}
+main .subtitle h3 span {
+	font-size: 36px;
+	font-weight: 600;
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	display: block;
+	border-bottom: 1px #40220f solid;
+}
+
+/* Index */
+/* ------------------------------------------------------------ */
+main#index {
+}
+main#index section {
+	margin: 90px 0;
+}
+main#index #mainvisual {
+	background: url(../images/index/mainvisual.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 900px;
+	margin: 0;
+	display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+main#index #mainvisual h2 {
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: #fff;
+	text-shadow: 0px 0 8px #ff8c00;
+}
+main#index .subtitle {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+main#index .subtitle h2 {
+	font-size: 18px;
+	color: #40220f;
+}
+main#index .subtitle h2 span {
+	font-size: 36px;
+	font-weight: 600;
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	display: block;
+	border-bottom: 1px #40220f solid;
+}
+main#index #news .newsbox {
+	text-align: center;
+	font-size: 18px;
+	line-height: 1;
+	margin: 60px 0 0;
+}
+main#index #news .newsbox .date {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	display: inline-block;
+	border-bottom: 1px #d4b382 solid;
+}
+main#index #news .newsbox .bnr {
+	width: 728px;
+	margin: 20px auto 0;
+}
+main#index #news .newsbox .bnr img {
+	width: 100%;
+	height: auto;
+}
+main#index #onlineshop {
+	background: url(../images/index/bg_onlineshop.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 500px;
+	display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+main#index #onlineshop h2 {
+	filter: drop-shadow(0px 0 8px #ff8c00);
+}
+main#index #onlineshop .txt {
+	font-size: 28px;
+	color: #fff;
+	text-shadow: 0px 0 8px #ff8c00;
+	margin: 60px 0 0;
+}
+main#index #cafemugi,
+main#index #rawmaterials,
+main#index #corporation {
+}
+main#index #cafemugi .inner,
+main#index #rawmaterials .inner,
+main#index #corporation .inner {
+    max-width: 1600px;
+    height: 610px;
+    margin: 0 auto;
+    position: relative;
+}
+main#index #cafemugi figure,
+main#index #rawmaterials figure,
+main#index #corporation figure {
+    max-width: 900px;
+    width: 75%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+main#index #cafemugi figure img,
+main#index #rawmaterials figure img,
+main#index #corporation figure img {
+    width: 100%;
+}
+main#index #cafemugi figcaption,
+main#index #rawmaterials figcaption,
+main#index #corporation figcaption {
+    background: rgb(255,255,255);
+    opacity: 0.8;
+    text-align: center;
+    width: 800px;
+    height: 520px;
+    position: absolute;
+    top: 90px;
+    right: 4vw;
+    z-index: 1;
+	display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+main#index #cafemugi figcaption .txt,
+main#index #rawmaterials figcaption .txt,
+main#index #corporation figcaption .txt {
+	font-size: 28px;
+	line-height: 1.5;
+	margin: 60px 0 0;
+}
+main#index #philosophy,
+main#index #access,
+main#index #media {
+	background-color: #d4b382;
+	padding: 90px 0;
+}
+main#index #philosophy .inner,
+main#index #access .inner {
+	background-color: #d4b382;
+    max-width: 1600px;
+    height: 610px;
+    margin: 0 auto;
+    position: relative;
+}
+main#index #philosophy figure,
+main#index #access figure {
+    max-width: 900px;
+    width: 75%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 0;
+}
+main#index #philosophy figure img,
+main#index #access figure img {
+    width: 100%;
+}
+main#index #philosophy figcaption,
+main#index #access figcaption {
+    background: rgb(255,255,255);
+    opacity: 0.8;
+    text-align: center;
+    width: 800px;
+    height: 520px;
+    position: absolute;
+    top: 90px;
+    left: 4vw;
+    z-index: 1;
+	display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+main#index #philosophy figcaption .txt,
+main#index #access figcaption .txt {
+	font-size: 28px;
+	line-height: 1.5;
+	margin: 60px 0 0;
+}
+main#index #media .medialist {
+	width: 960px;
+	margin: 60px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+main#index #media article {
+	width: 460px;
+	margin: 40px 0 0;
+	display: table;
+}
+main#index #media article:nth-child(1),
+main#index #media article:nth-child(2) {
+	margin: 0;
+}
+main#index #media article figure {
+	width: 120px;
+	display: table-cell;
+}
+main#index #media article figcaption {
+	width: 340px;
+	display: table-cell;
+}
+main#index #media article figcaption .date span {
+	color: #856649;
+	font-size: 12px;
+	margin-left: 10px;
+}
+main#index #media article figcaption hr {
+	height: 1px;
+	margin: 10px 0;
+	padding: 0;
+	display: block;
+	border: 0;
+	border-top: 1px #e5cfa6 solid;
+}
+main#index #information {
+	width: 90%;
+	margin: 90px auto;
+}
+main#index #information h2 {
+	background: #231815;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+	margin: 0;
+	padding: 5px 10px;
+}
+main#index #information .inner {
+	background: #ffffff;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 20px;
+	border: 1px #231815 solid;
+	border-top: none;
+}
+main#index #information .inner h3 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+main#index #information .inner hr {
+	height: 1px;
+	margin: 20px 0;
+	padding: 0;
+	display: block;
+	border: 0;
+	border-top: 1px #231815 solid;
+}
+main#index #information ul {
+	margin: 20px auto 0;
+	padding: 0;
+}
+main#index #information ul li {
+	list-style-type: square;
+	margin: 0 0 0 1em;
+}
+
+/* News */
+/* ------------------------------------------------------------ */
+main#news {
+}
+main#news .title {
+	background: url(../images/news/bg_title.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main#news section {
+	width: 960px;
+	margin: 90px auto 0;
+}
+main#news .subtitle {
+	text-align: center;
+	display: block;
+	margin-bottom: 60px;
+}
+main#news .subtitle .date {
+	font-size: 18px;
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	display: inline-block;
+	border-bottom: 1px #d4b382 solid;
+}
+main#news .subtitle h3 {
+	font-size: 24px;
+	font-weight: 600;
+	display: block;
+	color: #40220f;
+}
+main#news figure {
+	width: 480px;
+	margin: 30px auto 0;
+}
+main#news figure img {
+	width: 480px;
+	height: auto;
+}
+main#news figcaption {
+	margin: 30px auto 0;
+}
+
+/* cafe */
+/* ------------------------------------------------------------ */
+main#cafe {
+}
+main#cafe .title {
+	background: url(../images/cafe/bg_title.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main#cafe section {
+	width: 960px;
+	margin: 90px auto 0;
+}
+main#cafe .my-simple-gallery {
+	display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main#cafe .my-simple-gallery figure {
+	width: 300px;
+	height: 173px;
+	margin: 30px 0 0 0;
+	display: block;
+	overflow: hidden;
+	display: flex; /* 子要素をflexboxで揃える */
+    flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+}
+main#cafe .my-simple-gallery figure:nth-child(1),
+main#cafe .my-simple-gallery figure:nth-child(2),
+main#cafe .my-simple-gallery figure:nth-child(3) {
+	margin: 0;
+}
+main#cafe .my-simple-gallery figure img {
+	width: 300px;
+	height: auto;
+}
+main#cafe .my-simple-gallery figcaption {
+	display: none;
+}
+main#cafe .dllist {
+	margin: 60px 0 0;
+}
+main#cafe .dlbox {
+	width: 100%;
+	display: table;
+}
+main#cafe .dlbox .dtbox {
+	color: #8b8887;
+	text-align: left;
+	width: 200px;
+	border-top: 1px #433e3d solid;
+	display: table-cell;
+	vertical-align: top;
+}
+main#cafe .dlbox .ddbox {
+	text-align: left;
+	width: 640px;
+	border-top: 1px #c5c3c3 solid;
+	display: table-cell;
+}
+main#cafe .dlbox:last-child .dtbox {
+	border-bottom: 1px #433e3d solid;
+}
+main#cafe .dlbox:last-child .ddbox {
+	border-bottom: 1px #c5c3c3 solid;
+}
+main#cafe .dlbox .inner {
+	padding: 15px 30px;
+}
+main#cafe .dotted {
+	border: dotted 1px #d3d3d3;
+}
+main#cafe .dlbox span {
+	font-size: 12px;
+	margin-left: 10px;
+}
+main#cafe a[href^="tel:"] {
+	pointer-events: none;
+	cursor: text;
+	text-decoration: none;
+}
+
+/* Philosophy */
+/* ------------------------------------------------------------ */
+main#philosophy {
+}
+main#philosophy .title {
+	background: url(../images/philosophy/bg_title.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main#philosophy section {
+	width: 960px;
+	margin: 90px auto 0;
+}
+main#philosophy .subtitle {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+main#philosophy .subtitle h3 {
+	color: #40220f;
+	font-size: 36px;
+	font-weight: 600;
+	display: block;
+	line-height: 1.5;
+}
+main#philosophy section p {
+	line-height: 2em;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+}
+main#philosophy section .imgleft {
+	float: left;
+	margin: 0 30px 10px 0;
+}
+main#philosophy section .imgright {
+	float: right;
+	margin: 0 0 10px 30px;
+}
+
+/* Raw materials */
+/* ------------------------------------------------------------ */
+main#rawmaterials {
+}
+main#rawmaterials .title {
+	background: url(../images/rawmaterials/bg_title.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main#rawmaterials section {
+	width: 960px;
+	margin: 90px auto 0;
+}
+main#rawmaterials .subtitle {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+main#rawmaterials .subtitle h3 {
+	color: #40220f;
+	font-size: 36px;
+	font-weight: 600;
+	display: block;
+	line-height: 1.5;
+}
+main#rawmaterials section p {
+	line-height: 2em;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+}
+main#rawmaterials section .imgleft {
+	float: left;
+	margin: 0 30px 10px 0;
+}
+main#rawmaterials section .imgright {
+	float: right;
+	margin: 0 0 10px 30px;
+}
+
+/* Access */
+/* ------------------------------------------------------------ */
+main#access {
+}
+main#access .title {
+	background: url(../images/access/bg_title.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main#access section {
+	width: 960px;
+	margin: 90px auto 0;
+}
+main#access .map {
+	margin: 40px auto;
+	max-width: 100%;
+}
+main#access .map img {
+	width: 960px;
+	height: auto;
+}
+main#access .bgleft {
+	width: 960px;
+    height: 346px;
+    margin: 40px auto;
+    position: relative;
+}
+main#access .bgleft .f00 {
+	width: 600px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	z-index: 0;
+	margin: 0;
+}
+main#access .bgleft .f01 {
+	background: #FAFAFA;
+    opacity: 0.8;
+    text-align: center;
+    width: 480px;
+    height: 150px;
+    position: absolute;
+    top: 98px;
+    right: 0px;
+	z-index: 1;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#access .bgleft .f02 {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	z-index: 2;
+	margin: 0;
+}
+main#access .bgright {
+	width: 960px;
+    height: 346px;
+    margin: 40px auto;
+    position: relative;
+}
+main#access .bgright .f00 {
+	width: 600px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+	z-index: 0;
+	margin: 0;
+}
+main#access .bgright .f01 {
+	background: #FAFAFA;
+    opacity: 0.8;
+    text-align: center;
+    width: 480px;
+    height: 150px;
+    position: absolute;
+    top: 98px;
+    left: 0px;
+	z-index: 1;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#access .bgright .f02 {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	z-index: 2;
+	margin: 0;
+}
+main#access .next {
+	width: 36px;
+	margin: 0 auto;
+	text-align: center;
+}
+main#access .next img {
+	width: 100%;
+	height: auto;
+}
+main#access figcaption .inner {
+	font-size: 18px;
+}
+main#access figcaption .inner span {
+	font-size: 14px;
+}
+
+/* Corporation */
+/* ------------------------------------------------------------ */
+main#corporation {
+}
+main#corporation .title {
+	background: url(../images/corporation/bg_title.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main#corporation section {
+	width: 960px;
+	margin: 90px auto 0;
+}
+main#corporation .dllist {
+	margin: 60px 0 0;
+}
+main#corporation .dlbox {
+	width: 100%;
+	display: table;
+}
+main#corporation .dlbox .dtbox {
+	color: #8b8887;
+	text-align: left;
+	width: 200px;
+	border-top: 1px #433e3d solid;
+	display: table-cell;
+	vertical-align: top;
+}
+main#corporation .dlbox .ddbox {
+	text-align: left;
+	width: 640px;
+	border-top: 1px #c5c3c3 solid;
+	display: table-cell;
+}
+main#corporation .dlbox:last-child .dtbox {
+	border-bottom: 1px #433e3d solid;
+}
+main#corporation .dlbox:last-child .ddbox {
+	border-bottom: 1px #c5c3c3 solid;
+}
+main#corporation .dlbox .inner {
+	padding: 15px 30px;
+}
+main#corporation .dlbox hr {
+	height: 1px;
+	margin: 10px 0;
+	padding: 0;
+	display: block;
+	border: 0;
+	border-top: 1px #c5c3c3 dotted;
+}
+main#corporation section .tel {
+	background: #e5cfa6;
+	text-align: center;
+	color: #231815;
+	width: 700px;
+	margin: 60px auto 0;
+	border: 1px #d4b382 solid;
+}
+main#corporation section .tel a {
+	color: #231815;
+}
+main#corporation section .tel a[href^="tel:"] {
+	pointer-events: none;
+	cursor: text;
+	text-decoration: none;
+}
+main#corporation section .tel h4 {
+	background: #d4b382;
+	font-size: 18px;
+	padding: 10px 0;
+}
+main#corporation section .tel div {
+	padding: 30px 20px 20px;
+}
+main#corporation section .tel p {
+	font-size: 16px;
+}
+main#corporation section .tel .icon {
+	background: url(../images/corporation/icon_tel.svg) no-repeat 0 0;
+	background-size: 30px;
+	line-height: 30px;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 600;
+	padding: 0 0 0 40px;
+	display: inline-block;
+}
+main#corporation section .tel hr {
+	width: 500px;
+	height: 1px;
+	margin: 10px auto;
+	padding: 0;
+	display: block;
+	border: 0;
+	border-top: 1px #d4b382 solid;
+}
+main#corporation section .tel .supplement {
+	font-size: 12px;
+}
+main#corporation section .contact_form {
+	background: #e5cfa6;
+	text-align: center;
+	color: #231815;
+	width: 700px;
+	margin: 60px auto 0;
+	border: 1px #d4b382 solid;
+}
+main#corporation section .contact_form h4 {
+	background: #d4b382;
+    font-size: 18px;
+    padding: 10px 0;
+}
+main#corporation section .contact_form div {
+	padding: 30px 20px;
+}
+main#corporation section .contact_form p {
+	font-style: italic;
+    font-weight: 600;
+	display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-style: italic;
+}
+
+/* Media */
+/* ------------------------------------------------------------ */
+main#media {
+}
+main#media .title {
+	background: url(../images/media/bg_title.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main#media section {
+	width: 960px;
+	margin: 90px auto 0;
+}
+main#media .medialist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+}
+main#media article {
+	width: 460px;
+	margin: 40px 0 0;
+	display: table;
+}
+main#media article:nth-child(1),
+main#media article:nth-child(2) {
+	margin: 0;
+}
+main#media article figure {
+	width: 120px;
+	display: table-cell;
+}
+main#media article figcaption {
+	width: 340px;
+	display: table-cell;
+}
+main#media article figcaption .date span {
+	color: #856649;
+	font-size: 12px;
+	margin-left: 10px;
+}
+main#media article figcaption hr {
+	height: 1px;
+	margin: 10px 0;
+	padding: 0;
+	display: block;
+	border: 0;
+	border-top: 1px #e5cfa6  solid;
+}
+
+/* Footer */
+/* ------------------------------------------------------------ */
+footer#copyright {
+	background: #d4b382;
+	color: #231815;
+	text-align: center;
+	margin: 90px 0 0;
+}
+footer#copyright #googlemap {
+	margin: 0;
+	padding: 0;
+}
+footer#copyright #footeriti {
+	margin: 0 auto;
+	padding: 60px 0 40px;
+	overflow: hidden;
+}
+footer#copyright #footeriti h2 {
+	margin: 0 auto;
+}
+footer#copyright #footeriti .footertext_area {
+	text-align: left;
+	margin: 60px 40px 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+footer#copyright #footeriti .footertext_area h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+footer#copyright #footeriti .footertext_area li {
+	margin-top: 10px;
+}
+footer#copyright #footeriti .footertext_area span {
+	font-size: 12px;
+}
+footer#copyright #footeriti .footertext_area tel a[href^="tel:"] {
+	pointer-events: none;
+}
+footer#copyright #footeriti .footertext_area .footertext_left {
+	flex-grow: 2;
+}
+footer#copyright #footeriti .footertext_area .footertext_right {
+	flex-grow: 1;
+}
+footer#copyright #footeriti .footertext_area .footertext_right span {
+	padding-left: 10px;
+}
+footer#copyright #footeriti .footertext_area .footertext_right .sitemap {
+	display: flex;
+	justify-content: space-between;
+}
+footer#copyright #footeriti .footertext_area .footertext_right ul {
+	padding: 0 40px 0 0;
+}
+footer#copyright #footeriti .footertext_area .footertext_right ul li a {
+	background: url(../images/index/icon_arrow2.svg) no-repeat left center;
+	background-size: auto 12px;
+	padding: 0 0 0 20px;
+	font-weight: 600;
+}
+footer#copyright #footeriti .copyright {
+	font-size: 12px;
+	margin: 60px auto 0;
+	color: #231815;
+	letter-spacing: 0.1em;
+}
+footer#copyright #footeriti .produce {
+	background: #e5cfa6;
+	font-size: 12px;
+	margin: 10px auto 0;
+	padding: 3px 10px;
+	display: inline-block;
+	letter-spacing: 0.1em;
+}
+
+/* scroll banner */
+/* ------------------------------------------------------------ */
+.scroll_banner_box {
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	z-index: 10;
+}
+.scroll_banner_box .scroll_banner_box_area {
+	width: 300px;
+	position: relative;
+}
+.scroll_banner_box .scroll_banner_box_area .banner {
+	background: #fff;
+	width: 300px;
+	border: 1px #fff solid;
+}
+.scroll_banner_box .scroll_banner_box_area .close {
+	width: 20px;
+	position: absolute;
+	top: 1px;
+	right: -1px;
+	z-index: 11;
+}
+
+/* トップページに戻るボタン */
+/* ------------------------------------------------------------ */
+.pagetop {
+	background: #fff;
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+.pagetop a {
+	display: block;
+}
+
+/* fadein */
+/* ------------------------------------------------------------ */
+.fadein {
+	transform: translate(0, 40px);
+	transition: all 700ms;
+	opacity: 0;
+}
+
+/* scrollin */
+/* ------------------------------------------------------------ */
+.fadein.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
+}
