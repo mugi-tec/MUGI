@@ -283,7 +283,7 @@ main#index .subtitle h2 span {
 main#index #news .newsbox {
 	text-align: center;
 	font-size: 18px;
-	line-height: 1;
+
 	margin: 60px 0 0;
 }
 main#index #news .newsbox .date {
@@ -291,6 +291,9 @@ main#index #news .newsbox .date {
 	padding: 0 0 10px;
 	display: inline-block;
 	border-bottom: 1px #d4b382 solid;
+}
+main#index #news .newsbox .newsnote {
+	line-height: 1.5;
 }
 main#index #news .newsbox .bnr {
 	width: 728px;
@@ -634,6 +637,17 @@ main#cafe a[href^="tel:"] {
 	pointer-events: none;
 	cursor: text;
 	text-decoration: none;
+}
+main#cafe .notice {
+	margin: 60px auto 0;
+	padding: 20px;
+	border: 1px #433e3d solid;
+}
+main#cafe .notice h4 {
+	text-align: center;
+}
+main#cafe .notice p {
+	margin: 10px auto 0;
 }
 
 /* Philosophy */
